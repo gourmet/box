@@ -109,7 +109,7 @@ apache:
             servername: app.box
             serveraliases:
                 - www.app.box
-            docroot: /var/www/app/webroot
+            docroot: /var/www/webroot
             port: '443'
             setenv:
                 - 'DEBUG 1'
@@ -135,7 +135,7 @@ nginx:
             server_name: app.box
             server_aliases:
                 - www.app.box
-            www_root: /var/www/app/webroot
+            www_root: /var/www/webroot
             listen_port: '80'
             index_files:
                 - index.html
