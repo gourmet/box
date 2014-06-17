@@ -17,9 +17,9 @@ A virtual machine to quickly start developing gourmet CakePHP 3 applications.
 ## Install
 
 ```
-git clone https://github.com/gourmet/box
+git clone --depth 1 https://github.com/gourmet/box
 composer create-project -s dev gourmet/platform box/app
-cd box; vagrant up
+cd box; rm -rf .git; vagrant up
 echo 100.100.100.100 app.box >> /etc/hosts
 ```
 
