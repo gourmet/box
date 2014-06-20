@@ -53,6 +53,8 @@ server:
     packages:
         - git-core
         - curl
+        - nodejs
+        - npm
     dot_files:
         -
             bash_aliases: null
