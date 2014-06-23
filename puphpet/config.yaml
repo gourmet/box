@@ -93,8 +93,6 @@ apache:
                 - www.app.box
             docroot: /var/www/webroot
             port: '80'
-            setenv:
-                - 'DEBUG 1'
             override:
                 - All
             options:
@@ -113,8 +111,6 @@ apache:
                 - www.app.box
             docroot: /var/www/webroot
             port: '443'
-            setenv:
-                - 'DEBUG 1'
             override:
                 - All
             options:
