@@ -8,6 +8,7 @@ A virtual machine to quickly start developing gourmet CakePHP 3 applications.
 * PHP 5.5 (cli, curl, intl, mcrypt, mysql, xdebug)
 * RabbitMQ
 * Elastic Search
+* [PHPCS][phpcs], [PHPMD][phpmd], [PHPCPD][phpcpd], [PHPDCD][phpdcd], [PHPLOC][phploc], [PHPUNIT][phpunit]
 
 ## Requirements
 
@@ -84,6 +85,12 @@ All gourmet packages use [semantic versioning][semver]:
 Copyright (c) 2014, Jad Bitar and licensed under [The MIT License][mit].
 
 [mit]:http://www.opensource.org/licenses/mit-license.php
+[phpcs]:https://github.com/squizlabs/PHP_CodeSniffer
+[phpmd]:http://phpmd.org/
+[phpcpd]:https://github.com/sebastianbergmann/phpcpd
+[phpdcd]:https://github.com/sebastianbergmann/phpdcd
+[phploc]:http://github.com/sebastianbergmann/phploc
+[phpunit]:http://phpunit.de
 [puphpet]:http://puphpet.com
 [puppet]:http://puppetlabs.com
 [semver]:http://semver.org
