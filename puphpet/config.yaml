@@ -31,11 +31,7 @@ vagrantfile-local:
                     - '--verbose'
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
-        synced_folder:
-            oYHDmFQYa1vj:
-                source: ./app/
-                target: /var/www
-                nfs: 'false'
+        synced_folder: { }
         usable_port_range: 2200..2250
     ssh:
         host: null
@@ -91,7 +87,7 @@ apache:
             servername: app.vm
             serveraliases:
                 - www.app.vm
-            docroot: /var/www/webroot
+            docroot: /vagrant/app/webroot
             port: '80'
             override:
                 - All
@@ -109,7 +105,7 @@ apache:
             servername: app.vm
             serveraliases:
                 - www.app.vm
-            docroot: /var/www/webroot
+            docroot: /vagrant/app/webroot
             port: '443'
             override:
                 - All
@@ -133,7 +129,7 @@ nginx:
             server_name: app.vm
             server_aliases:
                 - www.app.vm
-            www_root: /var/www/webroot
+            www_root: /vagrant/app/webroot
             listen_port: '80'
             index_files:
                 - index.html

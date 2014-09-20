@@ -38,7 +38,6 @@ This will:
 | IP address     | 192.168.13.37    |
 | Hostname       | app.vm           |
 | SSH users      | root, vagrant    |
-| Shared folders | ./app            |
 | Timezone       | America/Montreal |
 
 For more details, or to change anything, check `puphpet/config.yaml`.
