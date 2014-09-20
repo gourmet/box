@@ -21,7 +21,7 @@ A virtual machine to quickly start developing gourmet CakePHP 3 applications.
 git clone --depth 1 https://github.com/gourmet/box
 composer create-project -s dev gourmet/platform box/app
 cd box; rm -rf .git; vagrant up
-echo 100.100.100.100 app.box >> /etc/hosts
+echo 192.168.13.37 app.vm >> /etc/hosts
 ```
 
 This will:
@@ -29,14 +29,14 @@ This will:
 * Clone this repository
 * Create a `Gourmet/Platform` project to use on the VM
 * Start the box for the first time
-* Point `app.box` to the VM
+* Point `app.vm` to the VM
 
 ## Defaults
 
 | Property       | Default Value    |
 |----------------|------------------|
-| IP address     | 100.100.100.100  |
-| Hostname       | app.box          |
+| IP address     | 192.168.13.37    |
+| Hostname       | app.vm           |
 | SSH users      | root, vagrant    |
 | Shared folders | ./app            |
 | Timezone       | America/Montreal |

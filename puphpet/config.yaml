@@ -3,11 +3,11 @@ vagrantfile-local:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
-        hostname: app.box
+        hostname: app.vm
         memory: '512'
         chosen_provider: virtualbox
         network:
-            private_network: 100.100.100.100
+            private_network: 192.168.13.37
             forwarded_port:
                 tgH0Jjr6vWbC:
                     host: '2200'
@@ -88,9 +88,9 @@ apache:
         - headers
     vhosts:
         1rnpT3HWwn5d:
-            servername: app.box
+            servername: app.vm
             serveraliases:
-                - www.app.box
+                - www.app.vm
             docroot: /var/www/webroot
             port: '80'
             override:
@@ -106,9 +106,9 @@ apache:
             ssl_chain: ''
             ssl_certs_dir: ''
         ll4k0a23vT0y:
-            servername: app.box
+            servername: app.vm
             serveraliases:
-                - www.app.box
+                - www.app.vm
             docroot: /var/www/webroot
             port: '443'
             override:
@@ -130,9 +130,9 @@ nginx:
     install: 0
     vhosts:
         DyOGMwgoRLIE:
-            server_name: app.box
+            server_name: app.vm
             server_aliases:
-                - www.app.box
+                - www.app.vm
             www_root: /var/www/webroot
             listen_port: '80'
             index_files:
