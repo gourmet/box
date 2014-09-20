@@ -38,7 +38,7 @@ This will:
 | IP address     | 192.168.13.37    |
 | Hostname       | app.vm           |
 | SSH users      | root, vagrant    |
-| Timezone       | America/Montreal |
+| Timezone       | UTC              |
 
 For more details, or to change anything, check `puphpet/config.yaml`.
 
