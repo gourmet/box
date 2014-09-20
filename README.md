@@ -50,6 +50,12 @@ For more details, or to change anything, check `puphpet/config.yaml`.
 Connect to the VM:
 
 ```
+vagrant ssh
+```
+
+or:
+
+```
 ssh -i puphpet/files/dot/ssh/id_rsa root@app.box
 ssh -i puphpet/files/dot/ssh/id_rsa vagrant@app.box
 ```
