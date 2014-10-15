@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd /var/www;composer update
+cd /vagrant/app;composer update

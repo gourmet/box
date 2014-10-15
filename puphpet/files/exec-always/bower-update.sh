@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd /var/www;bower update --config.interactive=false --allow-root
+cd /vagrant/app;bower update --config.interactive=false --allow-root
